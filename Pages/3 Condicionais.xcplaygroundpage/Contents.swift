@@ -4,7 +4,7 @@ import UIKit
  ### 1. Dois valores [🐝]
  Crie um programa que leia dois valores (considere que não serão lidos valores iguais) e escreva-os em ordem crescente.
 */
-// código aqui
+
 
 /*:
  ### 2. Alugue o carro  [🐝]
@@ -22,8 +22,17 @@ import UIKit
  ### 3. CNH  [🐝]
  Crie um programa que leia o ano atual e o ano de nascimento de uma pessoa. O programa deve escrever uma mensagem que diga se ela poderá ou não tirar a carteira de habilitação nesse ano.
  */
- // código aqui
 
+func verificarIdadeCNH (anoAtual: Int, anoNascimento: Int) {
+    if anoAtual - anoNascimento >= 18 {
+        print("Pode tirar a CNH!")
+    }
+    else {
+        print("Opa, precisa esperar mais alguns anos!")
+    }
+}
+
+verificarIdadeCNH(anoAtual: 2023, anoNascimento: 2020)
 /*:
  ### 4. Maior diferença [🐝]
  Escreva um programa que, dados dois números inteiros diferentes, mostre na tela o maior deles, assim como a diferença existente entre ambos.
@@ -135,7 +144,9 @@ import UIKit
  ### 18. 3 valores ordenados [🐝🐝🐝]
  Crie um programa que leia 3 valores (considere que não serão informados valores iguais) e escreva todos em ordem.
  */
- // código aqui
+//(resolvido no começo da aula de loops)
+
+
 
 /*:
  ### 19. Comissão de vendas [🐝🐝🐝]
@@ -149,7 +160,19 @@ import UIKit
 
  Crie uma função que receba um dia da semana no tipo dessa enumeração, e printe a mensagem: "Bora trabalhar" se for dia de semana e "Bora pra praia" se for fim de semana.
  */
- // código aqui
+enum diasSemana {
+    case segunda
+    case terça
+    case quarta
+    case quinta
+    case sexta
+    case sábado
+    case domingo
+}
+
+
+
+
 
 /*:
  ### 21. Tômperos do Jacquin [🐝🐝🐝🤯]
